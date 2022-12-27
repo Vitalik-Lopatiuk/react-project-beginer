@@ -1,3 +1,3 @@
 # react-project-beginner
 
-Here is my ped-project on react✔
+Here is my ped-projects on react✔
