@@ -1,26 +1,31 @@
+import React from 'react';
 import { useState } from 'react';
 import './index.scss';
 
 function App() {
-  const [count , setCount] = useState(0)
-  const incrementBtn = () =>{
-    setCount(count + 1)
+  const [open , setOpen] = useState(false)
+
+  const showBtn = () =>{
+    setOpen(true)
   }
 
-  const decrementBtn = () =>{
-    setCount(count - 1)
+  const closeBtn = () =>{
+    setOpen(false)
   }
-
+  
   return (
     <div className="App">
-      <div>
-        <h2>Счетчик:</h2>
-        <h1>{count}</h1>
-        <button onClick={decrementBtn} className="minus">- Минус</button>
-        <button onClick={incrementBtn} className="plus">Плюс +</button>
-      </div>
+      <button onClick={showBtn} className="open-modal-btn">✨ Открыть окно</button>
+      {open &&  <div className="overlay">
+        <div className="modal">
+          <svg  height="200" viewBox="0 0 200 200" width="200" onClick={closeBtn}>
+            <title />
+            <path d="M114,100l49-49a9.9,9.9,0,0,0-14-14L100,86,51,37A9.9,9.9,0,0,0,37,51l49,49L37,149a9.9,9.9,0,0,0,14,14l49-49,49,49a9.9,9.9,0,0,0,14-14Z" />
+          </svg>
+          <img src="https://media2.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif" alt="people" />
+        </div>
+      </div> }
     </div>
-  );
+  ); 
 }
-
 export default App;
