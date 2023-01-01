@@ -3,7 +3,7 @@ body {
   font-family: 'Rubik', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:#1C1D29 ;
+  background-color: #1C1D29;
 }
 
 .App {
@@ -49,33 +49,55 @@ body {
     border: none;
     margin: 5px;
     font-family: 'Rubik', sans-serif;
-    background-color:transparent ;
+    background-color: transparent;
     color: white;
+    transition: background-color 0.3s ease;
 
   }
 
-  .btn:hover{
-    font-size: 16px;
+  .btn:hover {
+    background-color: rgb(35, 32, 32);
+    border-radius: 40px;
   }
+
   .last-btn {
-
     display: grid;
     grid-template-columns: 65px 65px 65px 65px;
   }
 
-  .eval{
+  .eval {
     background-color: #FF7433;
-    border-radius:100%;
+    border-radius: 100%;
     font-size: 20px;
   }
-  .eval:hover{
-    font-size: 21px;
-    background: rgb(255,160,51);
-    background: linear-gradient(90deg, rgba(255,160,51,1) 0%, rgba(255,198,51,1) 35%, rgba(255,194,51,1) 100%); 
-    transition: background 0.5s ease;
-    color:black;
+
+  .eval:hover {
+
+    background: rgb(255, 160, 51);
+    background: linear-gradient(90deg, rgb(212, 119, 14) 0%, rgb(229, 111, 14) 35%, rgb(213, 91, 4) 100%);
+    transition: all 0.5s ease;
+    color: black;
   }
-  .orange-btn{
+
+  .orange-btn {
     color: #FF7433;
   }
+}
+
+
+//---------------------code below for burger menu---------------------
+
+// .edit-for-burger{
+//   display: grid;
+//   grid-template-columns:40px 40px 40px 40px ;
+// }
+
+.burger-btns-show {
+  border-radius: 5px;
+  border: none;
+  margin: 5px;
+  font-family: 'Rubik', sans-serif;
+  background-color: transparent;
+  color: white;
+
 }

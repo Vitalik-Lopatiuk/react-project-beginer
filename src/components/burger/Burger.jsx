@@ -1,16 +1,20 @@
 import { BsGrid3X3GapFill } from "react-icons/bs";
 import { BiArrowBack } from "react-icons/bi";
 
-const Burger = ({
+const Button = ({
   clearInputAll,
   heandleBtn,
   evalExample,
   clearLastElement,
-  burger,
-  showBurger,
+  square,
+  sqrtyBtn,
+  hideBurger,
 }) => {
   return (
-    <div className="btns edit-for-burger">
+    <div className="btns-burger edit-for-burger">
+      <button className="btn burger-btns-show" onClick={sqrtyBtn}>
+        sqr
+      </button>
       <button className="btn orange-btn" onClick={clearInputAll}>
         c
       </button>
@@ -22,6 +26,9 @@ const Burger = ({
       </button>
       <button className="btn orange-btn" value={"/"} onClick={heandleBtn}>
         /
+      </button>
+      <button className="btn burger-btns-show" value={'^2'} onClick={square}>
+        ^2
       </button>
 
       <button className="btn " value={7} onClick={heandleBtn}>
@@ -37,19 +44,24 @@ const Burger = ({
         {" "}
         х
       </button>
-
+      <button className="btn burger-btns-show" onClick={heandleBtn} value={"("}>
+        (
+      </button>
       <button className="btn" value={4} onClick={heandleBtn}>
         4
+      </button>
+      <button className="btn" value={5} onClick={heandleBtn}>
+        5
       </button>
       <button className="btn" value={6} onClick={heandleBtn}>
         6
       </button>
 
-      <button className="btn" value={5} onClick={heandleBtn}>
-        5
-      </button>
       <button className="btn orange-btn" value={"+"} onClick={heandleBtn}>
         +
+      </button>
+      <button className="btn burger-btns-show" onClick={heandleBtn} value={")"}>
+        )
       </button>
 
       <button className="btn" value={1} onClick={heandleBtn}>
@@ -65,8 +77,15 @@ const Burger = ({
         -
       </button>
 
-      <div className="last-btn edit-for-burger">
-        <button className="btn orange-btn" onClick={showBurger}>
+      <div className="last-btns-burger edit-for-burger">
+        <button
+          className="btn burger-btns-show"
+          onClick={heandleBtn}
+          value={3.14159265}
+        >
+          P
+        </button>
+        <button className="btn orange-btn" onClick={hideBurger}>
           <BsGrid3X3GapFill />
         </button>
         <button className="btn" value={0} onClick={heandleBtn}>
@@ -82,4 +101,4 @@ const Burger = ({
     </div>
   );
 };
-export default Burger;
+export default Button;
