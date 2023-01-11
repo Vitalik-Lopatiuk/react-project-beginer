@@ -108,3 +108,33 @@ body {
     }
   }
 }
+
+@media screen and (max-width: 769px) {
+  .App{
+    width: 300px;
+  }
+  .question-li{
+      text-align: center;
+      
+    }
+}
+
+@media screen and (max-width: 769px) {
+  .App{
+    width: 300px;
+  }
+  .question-li{
+      text-align: center;
+      
+    }
+}
+
+@media screen and (max-width: 481px) {
+  .App{
+    width: 200px;
+  }
+  .question-li{
+      text-align: center;
+      
+    }
+}
