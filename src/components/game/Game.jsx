@@ -2,7 +2,6 @@ import Questions from '../questions/Questions'
 function Game({step , nextQuestion , question}) {
   
     const editWidth = Math.round(step / Questions.length * 100)
-    console.log(editWidth)
 
     return (
       <>

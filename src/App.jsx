@@ -15,7 +15,7 @@ function App() {
 		if (question.correct === i) {
 			setCorrect(correct + 1)
 		}
-		console.log(correct)
+
 	}
 	return (
 		<div className="App">
